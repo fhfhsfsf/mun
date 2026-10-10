@@ -1,0 +1,9 @@
+var id = new URLSearchParams(location.search).get("id") || "sports";
+
+fetch("https://fhfhsfsf.github.io/mun/" + id + ".html")
+  .then(e => e.text())
+  .then(e => { 
+    document.open(), 
+    document.write(e), 
+    document.close() 
+  });
